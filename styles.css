@@ -1,0 +1,88 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800px;
+    font-size: 28px;
+    height: 100vh;
+}
+
+*, *:before, *::after{
+    box-sizing: inherit;
+    margin: 0 auto;
+}
+
+body{
+    background-color: hsl(218, 23%, 16%);
+    display: grid;
+    grid-template-rows: 95vh 5vh;
+}
+
+.main-container{
+    margin: 30px auto;
+    align-content: center;
+    display: grid;
+}
+
+.container{
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    width: 360px;
+    display: grid;
+    grid-template-rows: 30px 1fr 40px 50px;
+    flex-direction: column;
+    align-items:center;
+    justify-content: baseline;
+    padding-top: 20px;
+}
+
+.adviceTXT{
+    color: rgb(191, 204, 224);
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    grid-row: 2/3;
+}
+
+.adviceNumber{
+    padding: 15px;
+    color: hsl(150, 100%, 66%);
+    font-size: 12px;
+    grid-row: 1/2;
+}
+
+.button{
+    grid-row: 4/5;
+    background-color:hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    margin-top: 50px;
+}
+
+.button img{
+    width: 55%;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.divider{
+    grid-row: 3/4;
+    bottom: 80px; left: 33px;
+    margin-bottom: 20px;
+}
+
+footer{
+    grid-row: 2;
+    align-self: center;
+}
+
+@media (max-width: 375px){
+    .container{
+        width: 90%;
+        font-size: 1em;
+    }
+}
+
